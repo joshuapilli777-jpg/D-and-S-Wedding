@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f2b59a" />
+  <title>D & S | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- =========================================================
+       EASY EDIT AREA
+       Most changes can be made in script.js -> WEDDING object.
+       ========================================================= -->
+
+  <header class="topbar">
+    <a class="monogram" href="#home" aria-label="D and S">D <span>&</span> S</a>
+    <nav>
+      <a href="#story">Invitation</a>
+      <a href="#details">Details</a>
+      <a href="#countdown">Countdown</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="sun"></div>
+      <div class="ocean"></div>
+      <div class="sand"></div>
+      <div class="hero-content">
+        <p class="eyebrow">WITH THE BLESSINGS OF GOD</p>
+        <div class="verse">
+          <span class="quote-mark">“</span>
+          <p id="verseText"></p>
+          <span class="verse-ref" id="verseRef"></span>
+        </div>
+        <div class="divider"><span></span> ✦ <span></span></div>
+        <p class="invitation-line">Together with their families</p>
+        <h1><span id="brideName"></span><small>weds</small><span id="groomName"></span></h1>
+        <p class="date-hero" id="heroDate"></p>
+        <a class="scroll-cue" href="#story">Scroll to discover <span>↓</span></a>
+      </div>
+      <div class="birds">⌁ &nbsp; ⌁</div>
+    </section>
+
+    <section id="story" class="section invitation">
+      <div class="section-inner">
+        <p class="eyebrow">A BEAUTIFUL BEGINNING</p>
+        <h2>With joy in our hearts</h2>
+        <p class="lead">We invite you to celebrate the wedding of</p>
+
+        <div class="couple-grid">
+          <article class="person-card">
+            <div class="portrait-placeholder">D</div>
+            <p class="role">THE BRIDE</p>
+            <h3 id="brideName2"></h3>
+            <p id="brideParents"></p>
+          </article>
+          <div class="ampersand">&amp;</div>
+          <article class="person-card">
+            <div class="portrait-placeholder">S</div>
+            <p class="role">THE GROOM</p>
+            <h3 id="groomName2"></h3>
+            <p id="groomParents"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="section details">
+      <div class="section-inner">
+        <p class="eyebrow">SAVE THE DATE</p>
+        <h2>Our Wedding Day</h2>
+
+        <div class="detail-card">
+          <div class="detail">
+            <span class="icon">♡</span>
+            <span class="label">DATE</span>
+            <strong id="weddingDateText"></strong>
+          </div>
+          <div class="detail">
+            <span class="icon">◷</span>
+            <span class="label">TIME</span>
+            <strong id="weddingTimeText"></strong>
+          </div>
+          <div class="detail">
+            <span class="icon">⌖</span>
+            <span class="label">VENUE</span>
+            <strong id="venueText"></strong>
+            <span id="addressText"></span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <a id="mapsButton" class="button primary" target="_blank" rel="noopener">Open in Google Maps</a>
+          <button id="calendarButton" class="button secondary">Add to Calendar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="countdown" class="section countdown-section">
+      <div class="sunset-band"></div>
+      <div class="section-inner">
+        <p class="eyebrow">THE BIG DAY IS COMING</p>
+        <h2>Counting every moment</h2>
+        <div class="countdown" aria-live="polite">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-sun"></div>
+      <div class="section-inner">
+        <p class="eyebrow">UNTIL WE MEET</p>
+        <h2>We can't wait to celebrate with you.</h2>
+        <p>May God's love and grace surround this new beginning.</p>
+        <div class="mini-monogram">D &amp; S</div>
+        <p class="footer-date" id="footerDate"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love for <span>D &amp; S</span> · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
